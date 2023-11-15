@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Quiz</title>
+
+        <link rel="icon" type="image/png" href="mountain.png" >
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale1=1.0">
+        <link rel="stylesheet" href="style.css";>
+
+        <script src = "script.js"> </script>
+
+    </head>
+
+    <body>
+
+        <nav class="nav">
+            <ul>
+
+                <li><a href="index.html"> Main Menu </a></li>
+                <li><a href ="about.html "> About </a></li>
+                <li><a href ="xxx.html "> XXX  </a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <section>
+
+                <form name = "quiz">
+                    <!--Each fieldset is a different multiple choice question/ in order to have only one option to be selectable per question , the radio type must have the same name in ""-->
+                    <fieldset>
+
+                        <legend>  How many characters should a strong password have as a minimum?  </legend>
+
+                        <input type="radio" name = "password" value = "6" id = "6">
+                        <label for = "6"> 6 </label>
+                        <br>
+                        <input type="radio" name = "password" value = "7" id = "7">
+                        <label for = "7"> 7</label>
+                        <br>
+                        <input type="radio" name = "password" value = "8" id = "8">
+                        <label for = "8"> 8</label>
+                        <br>
+                        <input type="radio" name = "password" value = "9" id = "9">
+                        <label for = "9"> 9</label>
+                        <br>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>  Which of these is not a security threat to your device?  </legend>
+                        
+                        <input type="radio" name = "threat" value = "DNStunneling" id = "DNStunneling">
+                        <label for = "DNStunneling"> DNS Tunneling </label>
+                        <br>
+
+                        <input type="radio" name = "threat" value = "MWRattack" id = "MWRattack">
+                        <label for = "MWRattack">MWR Attack  </label>
+                        <br>
+
+                        <input type="radio" name = "threat" value = "IoTattack" id = "IoTattack">
+                        <label for = "IoTattack"> IoT Attack </label>
+                        <br>
+
+                        <input type="radio" name = "threat" value = "DOSattack" id = "DOSattack">
+                        <label for = "DOSattack"> DOS Attack </label>
+                        <br>
+
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>  What software protects your computer from cyber-threats?  </legend>
+                        
+                        <input type="radio" name = "cyber" value = "antithreat" id = "antithreat">
+                        <label for = "antithreat">Anti-threat </label>
+                        <br>
+
+                        <input type="radio" name = "cyber" value = "defenseBlocker" id = "defenseBlocker">
+                        <label for = "defenseBlocker"> Defense-Blocker </label>
+                        <br>
+
+                        <input type="radio" name = "cyber" value = "firewall" id = "firewall">
+                        <label for = "firewall">Firewall</label>
+                        <br>
+
+                        <input type="radio" name = "cyber" value = "IQRsoftware" id = "IQRsoftware">
+                        <label for = "IQRsoftware">IQR Software </label>
+                        <br>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>  What is Malware?  </legend>
+                        
+                        <input type="radio" name = "malware" value = "maliciousSoftware" id = "maliciousSoftware">
+                        <label for = "maliciousSoftware"> Malicious Software </label>
+                        <br>
+
+                        <input type="radio" name = "malware" value = "malignantSoftware" id = "malignantSoftware">
+                        <label for = "malignantSoftware"> Malignant Software </label>
+                        <br>
+
+                        <input type="radio" name = "malware" value = "maliciousHardware" id = "maliciousHardware">
+                        <label for = "maliciousHardware"> Malicious Hardware </label>
+                        <br>
+
+                        <input type="radio" name = "malware" value = "malignantHardware" id = "malignantHardware">
+                        <label for = "malignantHardware"> Malignant Hardware </label>
+                        <br>
+
+                    </fieldset>
+
+                    <br>
+                    <button type="button" onclick="checkAnswers()" > Submit </button>
+
+                </form>
+
+            </section>
+
+        </main>
+        
+    </body>
+
+</html>
